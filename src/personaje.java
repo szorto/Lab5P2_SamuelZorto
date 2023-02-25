@@ -1,4 +1,6 @@
+
 public class personaje {
+
     private String nombre, universo, debilidad, poder;
     private int agFisica, fuerza, agMental, hp;
 
@@ -82,9 +84,24 @@ public class personaje {
 
     @Override
     public String toString() {
-        return "personaje{" + "nombre=" + nombre + ", universo=" + universo + ", debilidad=" + debilidad + ", poder=" + poder + ", agFisica=" + agFisica + ", fuerza=" + fuerza + ", agMental=" + agMental + ", hp=" + hp + '}';
+        return nombre;
     }
-    
-    
-    
+
+    public String toString2() {
+        return "Poder -> " + poder + "\n"
+                + "Fuerza ->" + fuerza + "\n"
+                + "Habilidad ->" + agFisica + "\n"
+                + "Mental ->" + agMental + "\n"
+                + "HP ->" + hp + "\n";
+    }
+
+    public String toString3() {
+        return nombre + "\n"
+                + "   Poder -> " + poder + "\n"
+                + "   Fuerza ->" + fuerza + "\n"
+                + "   Habilidad ->" + agFisica + "\n"
+                + "  +  Mental ->" + agMental + "\n"
+                + "   HP ->" + hp + "\n";
+
+    }
 }
